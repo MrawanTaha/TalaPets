@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:talapets/screens/categoriesScreen.dart';
 import 'package:talapets/screens/emergencyScreen.dart';
 import 'package:talapets/screens/homeScreen.dart';
@@ -11,7 +10,7 @@ class PetSalesPage extends StatefulWidget {
 }
 
 class _PetSalesPageState extends State<PetSalesPage> {
-  String _price = '';
+  // String _price = '';
   int _navIcon = 0;
 
   @override
@@ -73,7 +72,7 @@ class _PetSalesPageState extends State<PetSalesPage> {
                           TextInputType.number, // Allow only numeric input
                       onChanged: (value) {
                         setState(() {
-                          _price = value;
+                          // _price = value;
                         });
                       },
                     ),
@@ -93,7 +92,7 @@ class _PetSalesPageState extends State<PetSalesPage> {
                           TextInputType.number, // Allow only numeric input
                       onChanged: (value) {
                         setState(() {
-                          _price = value;
+                          // _price = value;
                         });
                       },
                     ),
@@ -113,7 +112,7 @@ class _PetSalesPageState extends State<PetSalesPage> {
                           TextInputType.number, // Allow only numeric input
                       onChanged: (value) {
                         setState(() {
-                          _price = value;
+                          // _price = value;
                         });
                       },
                     ),
@@ -161,24 +160,6 @@ class _PetSalesPageState extends State<PetSalesPage> {
     return Image.network(
       imageUrl,
       fit: BoxFit.cover,
-    );
-  }
-
-  Widget _buildDropdown(
-      String label, List<String> items, String value, Function onChanged) {
-    return DropdownButtonFormField(
-      decoration: InputDecoration(
-        labelText: label,
-        border: OutlineInputBorder(),
-      ),
-      value: value,
-      items: items.map((item) {
-        return DropdownMenuItem(
-          value: item,
-          child: Text(item),
-        );
-      }).toList(),
-      onChanged: (newValue) => onChanged(newValue),
     );
   }
 
