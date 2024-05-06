@@ -233,7 +233,7 @@ class _EditProfileState extends State<EditProfile> {
           SizedBox(
             width: textFieldWidth,
             child: TextField(
-              readOnly: reading ?? true,
+              readOnly: reading ?? false,
               controller: controller,
               decoration: InputDecoration(hintText: hintText),
               onTap: onTap,

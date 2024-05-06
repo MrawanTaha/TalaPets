@@ -26,7 +26,7 @@ class SellFishScreen extends StatelessWidget {
           ),
           centerTitle: true,
         ),
-        body: const SingleChildScrollView(
+        body: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.all(16.0),
             child: Column(
